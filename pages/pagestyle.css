@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../image/page-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* shop page start */
+
+/* shop menu section */
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.nav {
+    width: 40%;
+   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dot {
+    background-color: rgb(99, 194, 99);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+
+}
+
+.num3 {
+    position: relative;
+}
+
+/* shop product section */
+
+.shopproduct {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 40px;
+}
+
+.found {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(90, 88, 88);
+}
+
+.price {
+    color: #f2a100;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* hover box and icon */
+.hovericon {
+    background-color: rgb(75, 71, 71);
+    height: 0px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    visibility: hidden;
+    transition: all 0.5s linear;
+   
+}
+.hovericon:hover{
+    background-color: #f2a100;
+    transition: none;
+}
+/* only icon */
+.hovericons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    
+   
+}
+
+.productimg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.productimg:hover .hovericon{
+ height: 40px;
+ visibility: visible;
+}
+
+/* product page number and next page  */
+
+.pageno{
+    background-color: #f6f6f6;
+    height: 35px;
+    width: 35px;
+    display: grid;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
+.prenext{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+
+}
+.pageno:hover{
+    background-color: #f2a100;
+    color: white;
+    transition: all 0.4s linear;
+}
+
+/* shop page end */
+
+/* about page start */
+
+.history{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.historybox{
+    width: 70%;
+   
+}
+.line{
+    border-bottom: 2px solid #f2a100;
+    width: 500px;
+}
+
+/* about gallery section */
+.gallery{
+    text-align: center;
+}
+.gallery>img{
+  margin: 10px;
+}
+
+/* Years of Exprience and  Happy Customers othr*/
+
+.customer{
+    border: 1px solid rgb(218, 214, 214);
+    height: 120px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.count{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #f2a100;
+    font-family: "Rubik",sans-serif;
+}
+
+/* review section */
+.review{
+    margin-top: 100px;
+    background-color: #eaeaea;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client{
+    height: 400px;
+    width: 800px;
+    text-align: center;
+
+}
+.nextclient{
+    background-color: #393939;
+    width: 16px;
+    height: 10px;
+    border-radius: 8px;
+    transition: all 0.6s linear;
+}
+.nextclient:hover{
+    background-color: #f2a100;
+    width: 25px;
+    cursor: pointer;
+   
+}
+
+/* about end */
+
+/* contact page start */
+
+/* contact info */
+
+.contact{
+    background-color: #fff9ed;
+    width: 30%;
+    /* padding: 30px; */
+}
+.contacticon{
+    background-color: #ffedc8;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #6c788c;
+    line-height: 30px;
+    text-align: center;
+}
+/* submit review */
+.form{
+    background-color: #F5F5F5;
+    padding: 50px;
+    
+}
+input{
+    height: 50px;
+    width: 300px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(203, 201, 201);
+    
+}
+::placeholder{
+    font-style: italic;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+/* submit btn  start*/
+
+.btnsubmit {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+  }
+  
+  .btnsubmit:hover {
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .type1::after {
+    content: "Thanks !";
+    height: 50px;
+    width: 150px;
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    /* font-size: 1.2rem; */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+  }
+  
+  .type1::before {
+    content: "SUBMIT REVIEW";
+    height: 50px;
+    width: 150px;
+    background-color: rgb(73,73,73);
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    /* font-size: 30px; */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+  }
+  
+  .type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+/* btn end */
+
+/* user section start  */
+/* dashboard section */
+
+.dashboard{
+    background-color: #F7F7F7;
+    width: 20%;
+     /* padding-top: 15px; */
+    /* padding-left: 20px; */
+}
+.dashboard ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+.dashboard ul li:hover{
+    background-color: #f2a100;
+    color: white;
+}
