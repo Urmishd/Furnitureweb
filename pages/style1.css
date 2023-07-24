@@ -160,6 +160,7 @@
   border-radius: 15px;
 
 }
+/* summary section */
 
 .summary {
   border: 1px solid rgb(187, 183, 183);
@@ -170,7 +171,8 @@
 
 .checkoutbtn {
   border: none;
-  background-color: rgb(102, 20, 179);
+  
+  background-color: blueviolet;
   padding: 9px;
   color: white;
   border-radius: 3px;
@@ -178,6 +180,9 @@
   margin-top: 10px;
   cursor: pointer;
  
+}
+.checkoutbtn:hover{
+  background-color: rgb(102, 20, 179);
 }
 .trash{
   margin-top: 10px;
